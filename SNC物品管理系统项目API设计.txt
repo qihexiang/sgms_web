@@ -1,0 +1,31 @@
+1.查询所有物品信息
+getItemsInfos()=>{
+	return 所有每类物品的keyword nickname role status num//关键词 别名 用途 状态 现有数量
+	
+}
+//num 不用单独列表，查的时候根据关键词或别名查， 所有物品列到一张表 所有物品记录写到一张表
+//status 采用数字类型 0=>不可借 1=>可借  2=>无剩余
+
+2.对单个物品的增删改查操作
+addItem(personID,staff,ItemID，position，keyword，nickname，role，status，num) => {
+	（提示：num写一个循环，每次添加一个该类物品）
+	(写入数据库时要记录操作时间)
+	return statuscode(200或404)	
+}
+deleteItem(personID,ItemID) => {
+	return statuscode(200或404)
+}
+modifyItem(personID,ItemID) =>{
+	return statuscode(200或404)
+}
+//在事件记录总表查询一个物品总的记录表
+getItemHistory(personID,ItemID){
+	（提醒：更具ItemID取查该物品的所有记录）
+	return 单个物品所有记录[keyword nickname role status borrowTime returnTime]//借出时间 归还时间
+}
+3.获取所有数据的借出历史
+getItemsAllHistory(personID){
+	return 事件记录表的所有数据
+}
+
+ 
