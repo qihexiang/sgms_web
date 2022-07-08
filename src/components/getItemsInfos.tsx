@@ -34,11 +34,11 @@ export default function getItemsInfos():object{
                         status:{type:"integer"},
                         num:{type:"integer"}
                     },
-                    required:["keyword","role","status"]
+                    required:["keyword","role","status","num"]
                 }
             }
             const validator = ajv.compile(schema)
-            if (validator(items)) return items;
+            if (validator(items)) return json;
             else throw new Error("Invalid Items Structure!")
         }).then(items => {
             setItems(items)
