@@ -6,7 +6,7 @@ const ajv = new Ajv({
     int32range: false
 })
 
-type Items = {
+type Item = {
     ItemID:number,
     keyword: string,
     nickname?: string,
@@ -15,15 +15,15 @@ type Items = {
     num: number,
 }
 
-export default function getItemsInfos():Items{
+export default function getItemsInfos():Item[]{
     const url="等后端同学给格式"
-    const [items, setItems] = useState<Items[]>([])
+    const [items, setItems] = useState<Item[]>([])
     useEffect(() => {
         fetch(url,{
             method:"GET",
         }).then(res => res.json()).then(json => {
             // 验证法则
-            type getItemsInfosArray = Array<Items>
+            type getItemsInfosArray = Array<Item>
             const getItemsInfoSchema: JSONSchemaType<getItemsInfosArray> = {
                 type: "array",
                 items:{
