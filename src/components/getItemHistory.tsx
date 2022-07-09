@@ -33,7 +33,7 @@ export default function getItemHistory(object:WhichItem):object{
             type getItemHistory = Array<ItemHistory>
             const getItemHistorySchema: JSONSchemaType<getItemHistory> = {
                 type: "array",
-                itemHistory:{
+                items:{
                     type:"object",
                     properties: {
                         keyword:{type:"string"},
@@ -42,8 +42,10 @@ export default function getItemHistory(object:WhichItem):object{
                         role:{type:"string"},
                         status:{type:"integer"},
                         num:{type:"integer"},
+                        borrowTime:{type:"array"},
+                        returnTime:{type:"array"},
                     },
-                    required:["keyword","role","status","num"]
+                    required:["keyword","itemID","role","status","num","borrowTime","returnTime"]
                 }
             }
             const validator = ajv.compile(getItemHistorySchema)
