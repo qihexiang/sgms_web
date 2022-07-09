@@ -6,46 +6,53 @@ const ajv = new Ajv({
     int32range: false
 })
 
-type Items = {
-    ItemID:number,
+type ItemHistory = {
     keyword: string,
     nickname?: string,
+    itemID:number,
     role: string,
     status: number,//0=>不可借 1=>可借  2=>无剩余
     num: number,
+    borrowTime:Array<string>,
+    returnTime:Array<string>,
 }
 
-export default function getItemsInfos():Items{
+type WhichItem = {
+    personID: number,
+    itemID: number, 
+}
+
+export default function getItemHistory(object:WhichItem):object{
     const url="等后端同学给格式"
-    const [items, setItems] = useState<Items[]>([])
+    const [itemHistory, setItems] = useState<ItemHistory[]>([])
     useEffect(() => {
         fetch(url,{
             method:"GET",
         }).then(res => res.json()).then(json => {
             // 验证法则
-            type getItemsInfosArray = Array<Items>
-            const getItemsInfoSchema: JSONSchemaType<getItemsInfosArray> = {
+            type getItemHistory = Array<ItemHistory>
+            const getItemHistorySchema: JSONSchemaType<getItemHistory> = {
                 type: "array",
-                items:{
+                itemHistory:{
                     type:"object",
                     properties: {
-                        ItemID:{type:"integer"},
                         keyword:{type:"string"},
                         nickname:{type:"string", nullable: true},
+                        itemID:{type:"integer"},
                         role:{type:"string"},
                         status:{type:"integer"},
-                        num:{type:"integer"}
+                        num:{type:"integer"},
                     },
                     required:["keyword","role","status","num"]
                 }
             }
-            const validator = ajv.compile(getItemsInfoSchema)
-            if (validator(items)) return json;
+            const validator = ajv.compile(getItemHistorySchema)
+            if (validator(itemHistory)) return json;
             else throw new Error("Invalid Items Structure!")
-        }).then(items => {
-            setItems(items)
+        }).then(itemHistory => {
+            setItems(itemHistory)
         }).catch(err => console.log(err))
     }, [])
 
-    return(items)
+    return(itemHistory)
 }
