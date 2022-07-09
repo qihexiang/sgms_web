@@ -42,8 +42,8 @@ export default function getItemHistory(object:WhichItem):object{
                         role:{type:"string"},
                         status:{type:"integer"},
                         num:{type:"integer"},
-                        borrowTime:{type:"array"},
-                        returnTime:{type:"array"},
+                        borrowTime:{type:"array", items: { type: "string" }, nullable: true},
+                        returnTime:{type:"array", items: { type: "string" }, nullable: true},
                     },
                     required:["keyword","itemID","role","status","num","borrowTime","returnTime"]
                 }
