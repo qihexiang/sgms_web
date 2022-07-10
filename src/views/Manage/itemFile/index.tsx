@@ -13,7 +13,7 @@ function ShowItemflie() {
             <div>
                 <h1>物品状态</h1>
                 <button>
-                    <a href="register1">登记</a>
+                    <a href="itemfile/register1">登记</a>
                 </button>
                 <br></br>
                     <p>

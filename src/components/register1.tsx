@@ -25,7 +25,7 @@ function Register1() {
             登记人员学号 <input className="personId" id="memberId"></input><br></br>
 
             <button className="determine">
-                确定
+                <a href="/manage/itemfile">确定</a>
             </button>
             <button className="reset">
                 重置

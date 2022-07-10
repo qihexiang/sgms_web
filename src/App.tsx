@@ -18,7 +18,7 @@ function App() {
         <Route path="/manage/borrowReturn" element={<ShowBorrowReturn></ShowBorrowReturn>} />
         <Route path="/manage/buyUpdate" element={<ShowBuyUpdate></ShowBuyUpdate>} />
         <Route path="/manage/personManagement" element={<ShowPersonManagement></ShowPersonManagement>} />
-        <Route path="/manage/register1" element={<ShowRegister1></ShowRegister1>} />
+        <Route path="/manage/itemFile/register1" element={<ShowRegister1></ShowRegister1>} />
       </Routes>
     </div>
   );
