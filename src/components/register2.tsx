@@ -21,7 +21,7 @@ function Register2() {
             借出数量<input className="objectName"></input><br></br>
             预计归还时间<input className="changeTime"></input><br></br>
             <button className="determine">
-                <a href="/manage/itemfile">确定</a>
+                <a href="/manage/borrowReturn">确定</a>
             </button>
             <button className="reset">
                 重置

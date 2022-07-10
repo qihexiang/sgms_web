@@ -20,7 +20,7 @@ function Register3() {
             丢失数量<input className="objectName"></input><br></br>
             更新时间<input className="changeTime"></input><br></br>
             <button className="determine">
-                <a href="/manage/itemfile">确定</a>
+                <a href="/manage/buyUpdate">确定</a>
             </button>
             <button className="reset">
                 重置

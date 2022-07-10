@@ -21,7 +21,7 @@ function Register4() {
                 学号<input className="memberName"></input><br></br>
                 联系方式<input className="memberName"></input><br></br>
             <button className="determine">
-                <a href="/manage/itemfile">确定</a>
+                <a href="/manage/personManagement">确定</a>
             </button>
             <button className="reset">
                 重置

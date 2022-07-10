@@ -22,9 +22,9 @@ function Register5() {
             归还数量<input className="objectName"></input><br></br>
             归还时间<input className="changeTime"></input><br></br>
             <button className="determine">
-                <a href="/manage/itemfile">确定</a>
+                <a href="/manage/borrowReturn">确定</a>
             </button>
-            <button className="reset">
+            <button type="reset" className="reset">
                 重置
             </button>
         </form>
