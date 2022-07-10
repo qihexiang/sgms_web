@@ -12,10 +12,7 @@ function ShowPersonManagement() {
             <div>
                 <h1>借还记录</h1>
                 <button>
-                    <a href="register1.html">人员登记</a>
-                </button>
-                <button>
-                    <a href="register1.html">人员更改</a>
+                    <a href="personManagement/register4">人员登记</a>
                 </button>
                 <br></br>
                     <p>

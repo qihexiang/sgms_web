@@ -2,10 +2,12 @@ import "../views/Manage/itemFile/sncGoods1.css";
 
 function Register1() {
     return (
+        <div>
+            <span>
+                <h1>物品档案</h1>
+            </span>
         <div className="ItemFileRegister">
-            <h1 className="title">物品档案</h1>
             <form action="" method="" name="">
-                <h2>物品登记</h2>
                 名称 <input className="objectName"></input><br></br>
 
                 分类<select className="classification" name="" id="catagory">
@@ -27,10 +29,8 @@ function Register1() {
             <button className="determine">
                 <a href="/manage/itemfile">确定</a>
             </button>
-            <button className="reset">
-                重置
-            </button>
         </form>
+    </div>
     </div>
     );
 }

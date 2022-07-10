@@ -12,10 +12,10 @@ function ShowBorrowReturn() {
             <div>
                 <h1>借还记录</h1>
                 <button>
-                    <a href="register1.html">借出登记</a>
+                    <a href="borrowReturn/register2">借出登记</a>
                 </button>
                 <button>
-                    <a href="register1.html">归还登记</a>
+                    <a href="borrowReturn/register5">归还登记</a>
                 </button>
                 <br></br>
                     <p>

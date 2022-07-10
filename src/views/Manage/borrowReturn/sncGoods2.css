@@ -1,19 +1,52 @@
 
 .ItemFileRegister {
     width: 600px;
-    height: 1100px;
+    height: 850px;
     border: 3px solid rgb(172, 207, 240);
     padding: 25px;
     margin: 25px;
-    margin-top: 10px;
+    margin-top: 60px;
 
     margin-bottom: 100px;
     margin-right: 200px;
     margin-left: 500px;
     background-color:#d4ecfa;
 }
-.txt{
-    margin-top: 10px;
+.borrowId{
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgb(34, 33, 23);
+    padding: 3px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 15px
+}
+.borrowName{
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgb(34, 33, 23);
+    padding: 3px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 15px
+}
+.registerId{
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgb(34, 33, 23);
+    padding: 3px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 15px
+
+}
+.backTime{
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgb(34, 33, 23);
+    padding: 3px;
+    margin-left: 50px;
+    margin-top: 30px;
 }
 .objectName{
     width: 200px;
@@ -21,7 +54,7 @@
     border: 1px solid rgb(34, 33, 23);
     padding: 3px;
     margin-left: 50px;
-    margin-top: 10px;
+    margin-top: 30px;
     border-radius: 15px
 }
 .classification{
@@ -102,4 +135,9 @@
     margin-top: 20px;
     border-radius: 15px
     
+}
+.title{
+    margin: auto;
+    margin-right: 200px;
+    margin-left: 700px;
 }

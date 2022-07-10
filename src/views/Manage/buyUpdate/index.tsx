@@ -12,7 +12,7 @@ function ShowBuyUpdate() {
             <div>
                 <h1>购买更新</h1>
                 <button>
-                    <a href="register1.html">更新登记</a>
+                    <a href="buyUpdate/register3">更新登记</a>
                 </button>
                 <br></br>
                     <p>
