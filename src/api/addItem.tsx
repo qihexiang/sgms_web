@@ -7,24 +7,23 @@ import { useEffect } from "react"
 // })
 
 type ADDItem = {
-    personID: number,
-    staff: string,
-    position: string,
-    keyword: string,
-    nickname?:string,
-    role:string,//种类
-    status: number,//0=>不可借 1=>可借  2=>无剩余
-    num: number, //物品数量
+    "amount": number,
+    "name": string,
+    "category": Array<string>,
+    "tags": Array<string>,
+    "place": string,
+    "memberId": number,
 }
 
-export default function Additem(object:ADDItem){
+export default function Additem(iteminfo:ADDItem){
     const [additems, setNewItems] = useState<ADDItem[]>([])
-    const url="等后端同学给格式"
+    const url="/api/goods/"
     //按要求拼接请求（待完成）
-    const url2post = `${url}/${additems.map(additems=>additems.personID)}/${additems.map(additems=>additems.personID)}`
+    // const url2post = `${url}/${additems.map(additems=>additems.personID)}/${additems.map(additems=>additems.personID)}`
     useEffect(()=>{
-        fetch(url2post,{
+        fetch(url,{
             method:"POST",
+            body:JSON.stringify(iteminfo)
         }).then(response =>{
             if(!(response.ok)){
                 throw new Error(`Error ${response.status} Network response was not OK`)
