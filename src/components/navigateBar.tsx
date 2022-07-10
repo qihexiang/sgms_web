@@ -9,15 +9,13 @@ export default function ShowNavigateLeft() {
           物品档案
         </a>
         <a
-          href="Borrowing and returning records.html"
-          className="list-group-item sub-nav"
-        >
+          href="/manage/borrowReturn" className="list-group-item sub-nav">
           借还记录
         </a>
-        <a href="Buy updates.html" className="list-group-item sub-nav">
+        <a href="/manage/buyUpdate" className="list-group-item sub-nav">
           购买更新
         </a>
-        <a href="Personnel management.html" className="list-group-item sub-nav">
+        <a href="/manage/personManagement" className="list-group-item sub-nav">
           人员管理
         </a>
       </div>

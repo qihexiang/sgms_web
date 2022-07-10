@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>   SNC GOODS  </title>
-  <link rel="stylesheet" href="Snc goods.css" type="text/css">
+  <link rel="stylesheet" href="sncGoods2.css" type="text/css">
   
     <link rel="stylesheet" href="http://szcesoft.com/wp-content/themes/szcesoft/css/bs3.css?v=180328" type="text/css" media="screen" /> 
   
@@ -15,8 +15,6 @@
     <script type="text/javascript" src="//s.union.360.cn/197599.js" async defer></script>
 
   </head>
-<!-- fghjkl
-fghjkl -->
 
   <body>
   
@@ -32,23 +30,34 @@ fghjkl -->
             <a href="Personnel management.html" class="list-group-item sub-nav">人员管理</a>
         </div>
     </div>
-    <div>
-        <h1>物品状态</h1>
-        <button>
-            <a href="register1.html">登记</a>        
-        </button>
-        <br>
-        <p>
-            搜索<input type="text" name="" id="">
-        </p>
-        <table class=table11_7>
-            <tr>
-                <th>名称</th><th>分类</th><th>用途</th><th>数量</th><th>借出数量</th><th>放置位置</th>
-            </tr>
-            <tr>
-                <td>物品一</td><td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
-            </tr>
-        </table>
+
+    <div class="ItemFileRegister">
+        <h1>借还记录登记</h1>
+        <form action="" method="" name="">
+            借出人ID<input class="borrowId"><br>
+
+            借出人姓名<input class="borrowName"><br>
+
+            登记人ID<input class="registerId"><br>
+
+            名称 <input class="objectName"><br>
+
+            分类<select class="classification" name="" id="">
+                <option value="">--请选择--</option>
+                <option value="">非消耗品</option>
+                <option value="">消耗品</option>
+            </select>
+            <br>
+            借出数量<input class="loanNumber"><br>
+
+            预计归还时间<input class="backTime"><br>
+            <button class="determine">
+                确定
+            </button>
+            <button class="reset">
+                重置
+            </button>
+        </form>
     </div>
 </body>
 </html>
