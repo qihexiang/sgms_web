@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>   SNC GOODS  </title>
-  <link rel="stylesheet" href="Snc goods.css" type="text/css">
+  <link rel="stylesheet" href="sncGoods4.css" type="text/css">
   
     <link rel="stylesheet" href="http://szcesoft.com/wp-content/themes/szcesoft/css/bs3.css?v=180328" type="text/css" media="screen" /> 
   
@@ -18,39 +18,66 @@
 
   <body>
   
-  
-            
     <div class="row box">   
         <div class="list-box col-xs-12 col-md-3">
             <div class="list-group">
             <a  class="list-group-item active">导航栏</a>
-            <a href="Item file.html" class="list-group-item sub-nav">物品档案</a>
-            <a href="Borrowing and returning records.html" class="list-group-item sub-nav">借还记录</a>
-            <a href="Buy updates.html" class="list-group-item sub-nav">购买更新</a>
-            <a href="Personnel management.html" class="list-group-item sub-nav">人员管理</a>
+            <a href="itemFile.html" class="list-group-item sub-nav">物品档案</a>
+            <a href="borrowReturn.html" class="list-group-item sub-nav">借还记录</a>
+            <a href="buyUpdate.html" class="list-group-item sub-nav">购买更新</a>
+            <a href="personManagement.html" class="list-group-item sub-nav">人员管理</a>
         </div>
     </div>
-<!-- <th>借出人</th><th>学号</th><th>姓名</th><th>联系方式</th><th>登记人
-</th><th>学号</th><th>姓名</th><th>联系方式</th> -->
+    <h1 class="title">人员登记</h1>
     <div class="ItemFileRegister">
-        <h1>登记</h1>
+       
         <form action="" method="" name="">
-            名称<input class="objectName"><br>
-            分类<select class="classification" name="" id="">
+            名字<input class="objectName" id=""><br>
+            部门<select class="objectName"  id="">
 
                 <option value="">--请选择--</option>
 
-                <option value="">男</option>
-
-                <option value="">女</option>
+                <option value="">办公室</option>
+                <option value="">开发部</option>
+                <option value="">系统维护部</option>
+                <option value="">UI设计部</option>
+                <option value="">媒体运营部</option>
+                <option value="">市场部</option>
+                <option value="">宣传部</option>
 
             </select><br>
-            借出人<input class="objectNumber"><br>
             学号<input class="loanNumber"><br>
             联系方式<input class="loanNumber"><br>
-            登记人<input class="objectNumber"><br>
+            <button class="determine">
+                确定
+            </button>
+        </form>
+    </div>
+
+    <h1 class="title">人员更改</h1>
+    <div class="ItemFileRegister">
+       
+        <form action="" method="" name="">
+            名字<input class="objectName" id=""><br>
+            部门<select class="objectName"  id="">
+
+                <option value="">--请选择--</option>
+
+                <option value="">办公室</option>
+                <option value="">开发部</option>
+                <option value="">系统维护部</option>
+                <option value="">UI设计部</option>
+                <option value="">媒体运营部</option>
+                <option value="">市场部</option>
+                <option value="">宣传部</option>
+                <option value="">退部</option>
+
+            </select><br>
             学号<input class="loanNumber"><br>
             联系方式<input class="loanNumber"><br>
+            <button class="determine">
+                更改
+            </button>
         </form>
     </div>
 </body>

@@ -2,10 +2,10 @@ import "../../sncGoods.css";
 import "../../webCss1.css";
 import "../../webCss2.css";
 
-// 凡是从SNCgoods里面摘的html代码都直接无脑导入上面三个样式
 
 function ShowItemflie() {
     return (
+        <div>
         <div className="row box">
             <div className="list-box col-xs-12 col-md-3">
                 <div className="list-group">
@@ -16,10 +16,14 @@ function ShowItemflie() {
                 <a href="personManagement.html" className="list-group-item sub-nav">人员管理</a>
                 </div>
             </div>
-            <div>
-                <h1>物品状态</h1>
+        </div>
+        <div>
+                <h1>借还记录</h1>
                 <button>
-                    <a href="register1.html">登记</a>
+                    <a href="register2.html">借出登记</a>
+                </button>
+                <button>
+                    <a href="register5.html">归还登记</a>
                 </button>
                 <br></br>
                     <p>
