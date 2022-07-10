@@ -29,6 +29,9 @@ function Register1() {
             <button className="determine">
                 <a href="/manage/itemfile">确定</a>
             </button>
+            <button type="reset">
+                重置
+            </button>
         </form>
     </div>
     </div>
