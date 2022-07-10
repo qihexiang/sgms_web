@@ -1,6 +1,6 @@
-import "./sncGoods1.css";
+import "../views/Manage/itemFile/sncGoods1.css";
 
-function ShowRegister1() {
+function Register1() {
     return (
         <div className="ItemFileRegister">
             <h1 className="title">物品档案</h1>
@@ -35,4 +35,4 @@ function ShowRegister1() {
     );
 }
 
-export default ShowRegister1;
+export default Register1;
